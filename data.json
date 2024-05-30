@@ -1,38 +1,53 @@
 {
+    "header": {
+        "title": "Curriculum Vitae"
+    },
     "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+        "fullName" : "Ofentse Lebese",
+        "photo" : "Profile.jpeg"
+    },
+    "contact" : {
+        "title": "Contact Information",
+        "phone" : "0716472363",
+        "email" : "fentselebese@gmail.com",
+        "address" : [
+            "Region F",
+            "Johannesburg",
+            "South Africa"
+        ]
+    },
+    "profile" : {
+        "title": "Profile Information",
+        "description": "As a well-organized, creative, and responsible professional, I consistently ensure that my actions are guided by a strong sense of integrity and a commitment to fostering positive relationships. My approachability and friendly demeanor facilitate effective collaboration and communication with colleagues, clients, and stakeholders. I am currently seeking a new challenge that allows me to translate the theoretical knowledge I acquired during my academic journey into practical, real-world applications. My goal is to leverage my skills and expertise to contribute meaningfully to an organization, driving both personal growth and the achievement of organizational objectives."
     },
     "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+        "title": "Education",
+        "institutionName" : "University of Johannesburg",
+        "description1" : "2020: Bachelor of Urban and Regional Planning (BURB)",
+        "description2" : "2021: Bachelor of Urban and Regional Planning Honours",
+        "description3" : "2024: Masters of Sustainable Urban Planning and Development"
     },
-    "foreignLanguage" : {
-        "language" : "",
-        "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        },
-        {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        }]
+    "experience" : {
+        "title": "Experience",
+        "experiences": [
+            {
+                "companyName": "2020-2024",
+                "photo": "images/uj-2.png",
+                "description": "Acdemic Tutor"
+            },
+            {
+                "companyName": "2024",
+                "photo": "images/Accenture.png",
+                "description": "UJ Accenture Programme"
+            }
+        ]   
     },
-    "favouriteSubjects" : [
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        }
-    ]
+    "footer": {
+        "linkedin": "https://www.linkedin.com/in/ofentse-lebese-0b6b5b1b8/",
+        "github": "https://github.com/OLebese95",
+        "twitter": "https://twitter.com/ofentse_lebese",
+        "copyright": "Copyright © 2021"
+    }
 }
+
+

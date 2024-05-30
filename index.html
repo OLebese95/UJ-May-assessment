@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O Lebese Curriculum Vitae</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .bg-grey {
+            background-color: black;
+            padding-bottom: auto;
+            padding: 6px;
+        }
+
+        .prof {
+            text-align: justify;
+        }
+
+        .center {
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+    <section class="container">
+        <section class="divider"></section>
+        <div class="row">
+            <div class="col s12 center bg-grey">
+                <h1>{{header.title}}</h1>
+            </div>
+        </div>
+    </section>
+    <div>
+        <div class="section">
+            <section class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h2>{{user.fullName}}</h2>
+                    </div>
+                    <div class="col s12 m6">
+                        <img src="images/{{user.photo}}" alt="Profile Picture" class="responsive-img circle"
+                            width="200">
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <section class="divider"></section>
+                <div class="row">
+                    <div class="col s12">
+                        <h2>{{profile.title}}</h2>
+                        <p class="prof">{{profile.description}}</p>
+                    </div>
+            </section>
+
+            <section class="container">
+                <section class="divider"></section>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h2>{{contact.title}}</h2>
+                        <p>{{contact.phone}}</p>
+                        <p>{{contact.email}}</p>
+                        <p>{{contact.address}}</p>
+                    </div>
+            </section>
+
+
+            <section class="container">
+                <section class="divider"></section>
+                <div class="row">
+                    <div class="col s12">
+                        <h2>{{education.title}}</h2>
+                        <h3>{{education.institutionName}}</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col s12 m6">
+                        <p>{{education.description1}}</p>
+                        <p>{{education.description2}}</p>
+                        <p>{{education.description3}}</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <section class="divider"></section>
+                <h2>{{experience.title}}</h2>
+                <div class="row">
+                    {{#each experience.experiences}}
+                    <div class="col s12 m4">
+                        <img src="{{photo}}" width="250">
+                        <h5>{{companyName}}</h5>
+                        <p>{{description}}</p>    
+                    </div>
+                    {{/each}}
+                </div>
+            </section>
+
+
+
+            </section>
+
+
+            <section class="container bg-grey">
+                <div class="row">
+                    <div class="col m4">
+                        <p><a href="{{footer.linkedin}}" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+                    </div>
+                    <div class="col m4">
+                        <p><a href="{{footer.github}}" target="_blank"><i class="fab fa-github"></i></a></p>
+                    </div>
+                    <div class="col m4">
+                        <p><a href="{{footer.twitter}}" target="_blank"><i class="fab fa-twitter"></i></a></p>
+                    </div>
+                    <div class="col s12 center">
+                        <p>{{footer.copyright}}</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--JavaScript at end of body for optimized loading-->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
+
 </html>
