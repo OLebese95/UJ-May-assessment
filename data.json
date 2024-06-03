@@ -4,7 +4,7 @@
     },
     "user" : {
         "fullName" : "Ofentse Lebese",
-        "photo" : "Profile.jpeg"
+        "photo" : "./images/Profile.jpeg"
     },
     "contact" : {
         "title": "Contact Information",
@@ -32,12 +32,12 @@
         "experiences": [
             {
                 "companyName": "2020-2024",
-                "photo": "images/uj-2.png",
+                "photo": "./images/uj-2.png",
                 "description": "Acdemic Tutor"
             },
             {
                 "companyName": "2024",
-                "photo": "images/Accenture.png",
+                "photo": "./images/Accenture.png",
                 "description": "UJ Accenture Programme"
             }
         ]   
